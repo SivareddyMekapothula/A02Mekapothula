@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Tickets</title>
+    <link type='text/css' rel="stylesheet" href="ticket.css"/>
+  </head>
+<body>
+
+<h1 align="center">MOVIE BOOKING</h1>
+<table align="center"><tr><td>
+<form >
+	<p ><b>Select the Movie:</b>
+		<select id="movie" >
+		  <option value="1">Jantha Garage</option>
+		  <option value="2">Bahubali</option>
+		  <option value="3">3 Iditos</option>
+		  <option value="4">Bajirao Mastani</option>
+		  <option value="4">Premam</option>
+		  <option value="4">Srimanthdu</option>
+		</select>
+	</p>
+</form>
+</td>
+</tr>
+<tr>
+<td>
+<form >
+
+<p><b>Select no of Tickets:</b>
+<select id="mySelect">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+</select>
+</p>
+</form>
+</td>
+</tr>
+<tr>
+<td>
+  <form action="Thanks.html" >
+<button id="but" type="button" onclick="myFunction()"  >Submit</button><br>
+		</form>
+
+</td>
+</tr>
+<tr>
+<td>
+<p><b>Ticket Price:  $</b><input type="text" id="demo"></p>
+</td></tr>
+</table>
+<script>
+function myFunction() {
+	
+    var x = document.getElementById("mySelect").value;
+    var y = parseInt(x)*5;
+    var z = document.getElementById("movie").value;
+    document.getElementById("demo").value = y;
+   
+}
+</script>
+
+</body>
+</html>
+
+
